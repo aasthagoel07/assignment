@@ -1,3 +1,22 @@
+## Summary
+- Installation Steps
+  - Execute 'dbScript.sql' that contains database and table schema used in the project
+  - Modify connection details in Import_To_DB.py to use your mssql server
+  - Run command 'pip install requirements.txt' (Make sure python is already installed on your system)
+
+- How to run code
+  - Run command 'bash import.sh capterra feed-products/capterra.yaml' in command prompt for capterra
+  - Run command 'bash import.sh softwareadvice feed-products/softwareadvice.json' in command prompt for softwareadvice
+
+- If I had more time
+  - Used environment variables for connectors etc
+  - Included better exception handling
+  - Cleaned the data properly to import better
+  - Covered all the boundary cases that might fail
+  - Learned more sh scripting and implemented the whole process using that right now I have used python
+
+* * * 
+
 ## SaaS Products Import
 
 We update our inventory of SaaS products from several sources.  Each source provides its content to us in a different format.  Write a command line script to import the products.
