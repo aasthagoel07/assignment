@@ -7,7 +7,7 @@ try:
     connection = mysql.connector.connect(host='localhost',
                                          database='assignment',
                                          user='root',
-                                         password='Aastha123%')
+                                         password='')
 
     mySql_insert_query = """INSERT INTO inventory (categories, name,  twitter)  
     VALUES ( %(categories)s , %(name)s , %(twitter)s ) """
