@@ -1,8 +1,7 @@
 #!/bin/bash
 
-EXPECTED="1 Record inserted successfully into Inventory table"
-bash import.sh capterra feed-products/capterra.yaml
-RESULT=$?
+EXPECTED="3 Record(s) inserted"
+RESULT=$(bash import.sh capterra feed-products/capterra.yaml)
 if echo "$RESULT" | grep -q "$EXPECTED"; then
   echo "Test passed";
 else
